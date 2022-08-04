@@ -3,7 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { join } from 'path';
-import { ContactsModule } from './contact/contacts.module';
+import { ContactModule } from './contact/contact.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
@@ -21,7 +21,7 @@ import { ConfigModule } from '@nestjs/config';
       },
       entities: [join(__dirname, '**/**.entity{.ts,.js}')],
     }),
-    ContactsModule,
+    ContactModule,
   ],
   controllers: [AppController],
   providers: [AppService],
