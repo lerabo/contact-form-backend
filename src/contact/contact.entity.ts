@@ -1,16 +1,13 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity()
-export class Form {
+export class Contact {
   @PrimaryGeneratedColumn()
   id: number;
-
   @Column()
   name: string;
-
   @Column()
   email: string;
-
   @Column()
-  message: number;
+  text: string;
 }
