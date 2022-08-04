@@ -1,12 +1,12 @@
 export interface CreateContactDTO {
   name: string;
   email: string;
-  message: string;
+  text: string;
 }
 
 export interface UpdateContactDTO {
   id: number;
   name: string;
   email: string;
-  message: string;
+  text: string;
 }
