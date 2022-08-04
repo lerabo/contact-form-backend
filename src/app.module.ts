@@ -21,6 +21,7 @@ import { ConfigModule } from '@nestjs/config';
         rejectUnauthorized: false,
       },
       entities: [join(__dirname, '**/**.entity{.ts,.js}')],
+      synchronize: true,
     }),
     ContactModule,
   ],
